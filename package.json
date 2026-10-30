@@ -1,0 +1,32 @@
+{
+  "name": "vision-intelligence-ai",
+  "version": "1.0.0",
+  "description": "Enterprise Computer Vision & Visual Intelligence Platform powered by Google Gemini",
+  "main": "server/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node --watch server/server.js",
+    "client": "node client/node_modules/vite/bin/vite.js client",
+    "build": "node client/node_modules/vite/bin/vite.js build client",
+    "build:client": "node client/node_modules/vite/bin/vite.js build client",
+    "init-db": "node server/scripts/initDb.js"
+  },
+  "dependencies": {
+    "@google/genai": "^0.3.1",
+    "@supabase/supabase-js": "^2.118.0",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.13.3",
+    "uuid": "^11.1.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

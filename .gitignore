@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+client/node_modules/
+backend/node_modules/
+.pnp
+.pnp.js
+
+# Testing & Logs
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Production Build Output
+dist/
+client/dist/
+build/
+
+# Local Environment Variables & Secrets
+.env
+.env*.local
+server/.env
+server/.env*.local
+client/.env
+client/.env*.local
+backend/.env
+backend/.env*.local
+
+# Local Data Store & Cache
+.data-store.json
+.vite-temp/
+client/.vite-temp/
+.eslintcache
+.stylelintcache
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
